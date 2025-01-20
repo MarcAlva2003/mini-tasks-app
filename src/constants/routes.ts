@@ -4,5 +4,7 @@ export const APP_ROUTES = {
 }
 
 export const PROJECTS_ROUTES = {
-  AI_CHATBOX: '/projects/ai-chatbox'
+  AI_CHATBOX: '/projects/ai-chatbox',
+  TODO_LIST: '/projects/todo-list',
+  QUIZZ_GAME: '/projects/quizz-game',
 }
