@@ -1,0 +1,38 @@
+.hedaer-mobile-nav-bg,
+.hedaer-mobile-nav {
+  transition: all ease 0.15s;
+  z-index: 20;
+}
+.hedaer-mobile-nav {
+  transition: all ease 0.15s;
+}
+.bg-mobile-nav-open {
+  opacity: 0.3;
+  visibility: visible;
+}
+.bg-mobile-nav-closed {
+  visibility: hidden;
+}
+.mobile-nav-open {
+  right: 0;
+  width: 180px;
+  overflow: hidden;
+}
+.mobile-nav-closed {
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.header-dektop-subitem-list {
+  display: none;
+}
+.header-nav-desktop-button:hover .header-dektop-subitem-list {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-open {
+    width: 250px;
+  }
+}
