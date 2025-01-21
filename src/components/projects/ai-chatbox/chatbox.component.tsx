@@ -7,12 +7,13 @@ import type {
 import { useEffect, useRef, useState } from 'react'
 
 import { DotsLoader } from '@/components/loaders/dots-loader.component'
-import { IoSendSharp } from "react-icons/io5";
+import { IoSendSharp } from 'react-icons/io5'
 import { OpenAI } from 'openai'
 import { TextField } from '@mui/material'
 
 export const AIChatbox = () => {
   const [responseLoading, setResponseLoading] = useState<boolean>(false)
+  const [usageExpired, setUsageExpired] = useState<boolean>(false)
   const messagesContainerRef = useRef<HTMLDivElement>(null)
   const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([
     { role: 'assistant', content: 'Hello! How can I help you today?' }
@@ -25,14 +26,19 @@ export const AIChatbox = () => {
     dangerouslyAllowBrowser: true
   })
 
+  const setUserTokenExpired = () => {
+    setUsageExpired(true)
+    localStorage.setItem('userTokenExpired', JSON.stringify(true))
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
-    if (!input.trim()) return
+    if (!input.trim() || usageExpired) return
     const userMessage: ChatCompletionMessageParam = { role: 'user', content: input }
     setMessages([...messages, userMessage])
     setInput('')
     setResponseLoading(true)
+    setUserTokenExpired()
     try {
       const completion = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo',
@@ -101,6 +107,13 @@ export const AIChatbox = () => {
     }
   }, [messages])
 
+  useEffect(() => {
+    const storedItems = localStorage.getItem('userTokenExpired')
+    if (storedItems) {
+      setUsageExpired(true)
+    }
+  }, [])
+
   return (
     <div className="w-full border border-solid border-slate-700 rounded-[8px] p-3 h-full">
       <div className="flex flex-col h-full">
@@ -125,17 +138,20 @@ export const AIChatbox = () => {
         <form onSubmit={handleSubmit} className="">
           <div className="flex pt-1">
             <TextField
-              value={input}
+              value={!usageExpired ? input : 'You can send just one message'}
               onChange={(e) => setInput(e.target.value)}
               className="flex-grow border rounded-l-md p-2 focus:outline-none"
               placeholder="Type your message..."
-              size='small'
+              size="small"
+              disabled={usageExpired}
+              error={usageExpired}
             />
             <button
+              disabled={usageExpired}
               type="submit"
               className="bg-blue-500 text-white p-2 rounded-r-md hover:bg-blue-600 w-10 flex justify-center items-center focus:outline-none"
             >
-              <IoSendSharp/>
+              <IoSendSharp />
             </button>
           </div>
         </form>
