@@ -6,7 +6,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <div className="flex">
       <ProjectsSidebar />
-      <div className='py-10 px-6 w-full'>{children}</div>
+      <div className='py-10 px-6 w-full max-h-[calc(100vh-64px)]'>{children}</div>
     </div>
   )
 }
