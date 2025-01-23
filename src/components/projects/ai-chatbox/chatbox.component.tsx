@@ -115,9 +115,9 @@ export const AIChatbox = () => {
   }, [])
 
   return (
-    <div className="w-full border border-solid border-slate-700 rounded-[8px] p-3 h-full">
+    <div className="w-full border border-solid border-slate-700 rounded-[8px] p-3 h-full ">
       <div className="flex flex-col h-full">
-        <div className="flex-grow p-4 overflow-y-auto h-full max-h-[calc(100%-48px)]" ref={messagesContainerRef}>
+        <div className="flex-grow p-[0px_0px_8px_0px] lg:p-4 overflow-y-auto h-full max-h-[calc(100%-48px)]" ref={messagesContainerRef}>
           {messages.map((message, index) => (
             <div
               key={index}
