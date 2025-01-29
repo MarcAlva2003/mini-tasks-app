@@ -46,7 +46,7 @@ export const ProjectsSidebar = () => {
   }, [search])
 
   return (
-    <div className="h-[calc(100vh-64px)] w-[240px] max-w-[240px] min-w-[240px] border-r border-slate-800 text-slate-100 pr-4 hidden md:visible">
+    <div className="h-[calc(100vh-64px)] w-[240px] max-w-[240px] min-w-[240px] border-r border-slate-800 text-slate-100 pr-4 hidden md:block">
       <h2 className="text pt-10 pb-4">PROJECTS</h2>
       <div className="w-full mb-2">
         <TextField
