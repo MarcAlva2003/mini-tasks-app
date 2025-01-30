@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
-import Image from 'next/image'
-import { IoIosArrowDown } from "react-icons/io";
-import profileImage from '@/assets/profile-images/profile-picture-gradiant-fit.png'
+import { IoIosArrowDown } from 'react-icons/io'
+import Lottie from 'lottie-react'
+import animation from '@/assets/lottie/intro-animation.json'
 
 export const Introduction = () => {
   return (
@@ -18,14 +18,12 @@ export const Introduction = () => {
           <Button variant="contained">About Me</Button>
         </div>
       </div>
-      <div className="bg-green- h-full">
-        <div className="w-[420px] h-full flex items-center left-[100px]">
-          <Image alt={`profile-picture`} objectFit="contain" width={400} src={profileImage} />
-        </div>
+      <div className="h-full">
+        <Lottie animationData={animation} loop={true} autoplay={true} style={{ width: 450 }} />
       </div>
-      <div className='absolute bottom-4 text-slate-500'>
-        <IoIosArrowDown size={30} className='mb-[-20px] animate-pulse'/>
-        <IoIosArrowDown size={30} className='animate-pulse'/>
+      <div className="absolute bottom-4 text-slate-500">
+        <IoIosArrowDown size={30} className="mb-[-20px] animate-pulse" />
+        <IoIosArrowDown size={30} className="animate-pulse" />
       </div>
     </section>
   )
