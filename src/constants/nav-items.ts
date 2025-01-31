@@ -13,7 +13,7 @@ export const navItemsList: INavItem[] = [
   {
     key: 'projects',
     link: APP_ROUTES.PROJECTS,
-    name: 'Projects',
+    name: 'Mini Projects',
     subitems: [],
     isUnfolded: false
   }
@@ -23,7 +23,7 @@ export const projectsNavItemsList: INavItem[] = [
   {
     key: 'ai-chatbox',
     link: PROJECTS_ROUTES.AI_CHATBOX,
-    name: 'AI Chatboz',
+    name: 'AI Chatbox',
     subitems: [],
     isUnfolded: false
   },
