@@ -1,0 +1,49 @@
+.hide-desc-image {
+  animation: imageVanish 1s linear forwards;
+}
+.show-desc-image {
+  animation: imageShow 1s linear forwards;
+}
+
+.card-desc {
+  transition: height 0.3s linear, opacity 0.3s linear;
+  opacity: 0;
+  height: 0;
+}
+
+@keyframes imageVanish {
+  0% {
+    opacity: 1;
+    padding-bottom: 56.25%;
+    margin-bottom: 16px;
+  }
+  50%,
+  70% {
+    opacity: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 16px;
+  }
+  100% {
+    opacity: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+@keyframes imageShow {
+  100% {
+    opacity: 1;
+    padding-bottom: 56.25%;
+    margin-bottom: 16px;
+  }
+  50%,
+  70% {
+    opacity: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 16px;
+  }
+  0% {
+    opacity: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
