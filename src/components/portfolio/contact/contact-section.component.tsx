@@ -23,7 +23,6 @@ export const SectionComponent = () => {
     reset
   } = useForm<Inputs>()
 
-  // const [state, handleSubmit] = useFormSpree("myzkjwyb");
   const [successSubmit, setSuccessSubmit] = useState<boolean>(false)
   const [errorSubmit, setErrorSubmit] = useState<boolean>(false)
 
@@ -34,15 +33,12 @@ export const SectionComponent = () => {
         if (res?.ok) {
           setSuccessSubmit(true)
           reset()
-          console.log(res)
         } else {
           setErrorSubmit(true)
           const errorData = res?.json()
           console.error('Error al enviar el mensaje:', errorData)
         }
       })
-    } else {
-      console.log('Error', errors.name)
     }
   }
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
