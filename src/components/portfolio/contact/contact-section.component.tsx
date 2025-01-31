@@ -1,11 +1,10 @@
 import { Button, TextField } from '@mui/material'
 import React, { useState } from 'react'
-import { SubmitHandler, useForm } from 'react-hook-form'
-import { ValidationError, useForm as useFormSpree } from '@formspree/react'
 import { contactInfo, links } from './contact-info'
 
 import Link from 'next/link'
 import { sendMessage } from './contac.services'
+import { useForm } from 'react-hook-form'
 
 type Inputs = {
   name: string
@@ -17,15 +16,13 @@ type Inputs = {
 export const SectionComponent = () => {
   const {
     register,
-    handleSubmit,
-    watch,
     trigger,
     formState: { errors },
     getValues,
-    clearErrors
+    clearErrors,
+    reset
   } = useForm<Inputs>()
 
-  // const [state, handleSubmit] = useFormSpree("myzkjwyb");
   const [successSubmit, setSuccessSubmit] = useState<boolean>(false)
   const [errorSubmit, setErrorSubmit] = useState<boolean>(false)
 
@@ -35,16 +32,13 @@ export const SectionComponent = () => {
       sendMessage(getValues()).then((res) => {
         if (res?.ok) {
           setSuccessSubmit(true)
-
-          console.log(res)
+          reset()
         } else {
           setErrorSubmit(true)
           const errorData = res?.json()
           console.error('Error al enviar el mensaje:', errorData)
         }
       })
-    } else {
-      console.log('Error', errors.name)
     }
   }
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
