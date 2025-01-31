@@ -57,14 +57,18 @@ export const ProjectCard = (props: IProjectCard) => {
       <div className="flex justify-between  ">
         <div>
           {projectLink && (
-            <Link href={projectLink}>
+            <Link
+              href={projectLink}
+              target={`${projectLink.includes('https') ? '_blank' : ''}`}
+              rel={`${projectLink.includes('https') ? 'noopener noreferrer' : ''}`}
+            >
               <IconButton>
                 <BiLinkExternal size={18} />
               </IconButton>
             </Link>
           )}
           {codeLink && (
-            <Link href={codeLink}>
+            <Link href={codeLink} target="_blank" rel="noopener noreferrer">
               <IconButton>
                 <FaGithub size={18} />
               </IconButton>
