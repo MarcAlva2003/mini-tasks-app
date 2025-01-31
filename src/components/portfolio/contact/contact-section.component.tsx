@@ -1,11 +1,10 @@
 import { Button, TextField } from '@mui/material'
 import React, { useState } from 'react'
-import { SubmitHandler, useForm } from 'react-hook-form'
-import { ValidationError, useForm as useFormSpree } from '@formspree/react'
 import { contactInfo, links } from './contact-info'
 
 import Link from 'next/link'
 import { sendMessage } from './contac.services'
+import { useForm } from 'react-hook-form'
 
 type Inputs = {
   name: string
@@ -17,12 +16,11 @@ type Inputs = {
 export const SectionComponent = () => {
   const {
     register,
-    handleSubmit,
-    watch,
     trigger,
     formState: { errors },
     getValues,
-    clearErrors
+    clearErrors,
+    reset
   } = useForm<Inputs>()
 
   // const [state, handleSubmit] = useFormSpree("myzkjwyb");
@@ -35,7 +33,7 @@ export const SectionComponent = () => {
       sendMessage(getValues()).then((res) => {
         if (res?.ok) {
           setSuccessSubmit(true)
-
+          reset()
           console.log(res)
         } else {
           setErrorSubmit(true)
