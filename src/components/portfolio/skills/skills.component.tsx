@@ -17,8 +17,8 @@ export const Skills = () => {
   }
 
   return (
-    <section className="w-full flex items-start mt-20 mb-20 justify-between">
-      <div className="mr-[200px] flex justify-center mt-10">
+    <section className="w-full lg:flex lg:items-start mt-20 mb-20 lg:justify-between">
+      <div className="mr-[200px] flex justify-center mt-10 hidden lg:block">
         <Lottie animationData={animation} loop={true} autoplay={true} style={{ width: 300 }} />
       </div>
       <div className="">

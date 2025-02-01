@@ -49,8 +49,8 @@ export const SectionComponent = () => {
   return (
     <section className="mb-20">
       <h3 className="text-[44px] font-semibold mb-8">Contact Me</h3>
-      <div className="flex justify-between w-full">
-        <div>
+      <div className="lg:flex lg:justify-between w-full">
+        <div className='mb-8'>
           <div>
             {contactInfo.map((info, index) => (
               <div key={index} className="mb-6">
@@ -69,7 +69,7 @@ export const SectionComponent = () => {
             ))}
           </div>
         </div>
-        <div className="w-[60%]">
+        <div className="lg:w-[60%]">
           <form>
             <div className="mb-3">
               <TextField
