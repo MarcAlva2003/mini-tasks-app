@@ -32,9 +32,9 @@ export const ThemeContextProvider = ({
 
   const darkTheme = createTheme({
     palette: {
-      mode: 'dark',
-    },
-  });
+      mode: 'dark'
+    }
+  })
 
   return (
     <ThemeContext.Provider value={{ mode, toggleMode }}>

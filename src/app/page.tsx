@@ -16,7 +16,7 @@ export default function Home() {
       <SkillsContextProvider>
         <Skills />
       </SkillsContextProvider>
-      <SectionComponent/>
+      <SectionComponent />
     </div>
   )
 }

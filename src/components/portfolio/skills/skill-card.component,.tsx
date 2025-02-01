@@ -19,7 +19,7 @@ export const SkillsCard = (props: ISkillsCard) => {
 
   const expanded: boolean = useMemo(() => {
     return selectedId === skill.id
-  }, [selectedId])
+  }, [selectedId, skill.id])
 
   return (
     <div className="mb-4">

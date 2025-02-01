@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 
 const poppins = Poppins({
   weight: ['400', '700'],
-  subsets: ['latin'],
-});
+  subsets: ['latin']
+})
 
 export default function RootLayout({
   children
