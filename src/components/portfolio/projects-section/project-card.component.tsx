@@ -29,7 +29,7 @@ export const ProjectCard = (props: IProjectCard) => {
   }
 
   return (
-    <div className="p-4 w-full bg-[#393E4680] rounded-[12px] flex flex-col justify-between">
+    <div className="p-2 lg:p-4 w-full bg-[#393E4680] rounded-[12px] flex flex-col justify-between">
       <div>
         <ReactCardFlip isFlipped={showCardInfo} flipDirection="vertical">
           <div>
