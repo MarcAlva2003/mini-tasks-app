@@ -9,7 +9,7 @@ import { SkillsContextProvider } from '@/components/portfolio/skills/skills.cont
 
 export default function Home() {
   return (
-    <div className="lg:px-20">
+    <div className="md:px-10 lg:px-20">
       <Introduction />
       <AboutMe />
       <ProjectsSection />
