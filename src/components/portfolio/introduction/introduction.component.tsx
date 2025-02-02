@@ -19,7 +19,7 @@ export const Introduction = () => {
         </div>
       </div>
       <div className="h-fit lg:h-full w-full max-w-[450px] md:m-[0_auto] lg:m-0">
-        {document && (
+        {!!document && (
           <Lottie animationData={animation} loop={true} autoplay={true} style={{ width: '100%' }} />
         )}
       </div>
