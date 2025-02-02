@@ -1,9 +1,18 @@
 import { Button } from '@mui/material'
 import Image from 'next/image'
 import { IoIosArrowDown } from 'react-icons/io'
+import Link from 'next/link'
 import introAnimation from '@/assets/lottie/intro-animation.gif'
 
 export const Introduction = () => {
+  const downloadCV = () => {
+    const link = document.createElement('a')
+    const url = `/cv/CV_Alvarez_Marcos_Frontend_Developer.pdf`
+    link.href = url
+    link.download = 'CV_Alvarez_Marcos_Frontend_Developer.pdf'
+    link.click()
+  }
+
   return (
     <section className="h-[auto] md:h-[calc(100vh-64px)] py-20 lg:flex lg:items-center lg:justify-between relative">
       <div className="">
@@ -13,9 +22,13 @@ export const Introduction = () => {
         </div>
         <div className="flex justify-center lg:justify-start mt-8 lg:mt-0">
           <div className="mr-4">
-            <Button variant="outlined">Download CV</Button>
+            <Button variant="outlined" onClick={downloadCV}>
+              Download CV
+            </Button>
           </div>
+          <Link href={'#about-me'} >
           <Button variant="contained">About Me</Button>
+          </Link>
         </div>
       </div>
       <div className="h-fit lg:h-full w-full max-w-[450px] md:m-[0_auto] lg:m-0">
