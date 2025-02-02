@@ -1,8 +1,8 @@
 import { Chip } from '@mui/material'
-import Lottie from 'lottie-react'
+import Image from 'next/image'
 import { SkillSection } from './skill-section.component'
 import { SkillsContext } from './skills.context'
-import animation from '@/assets/lottie/skills-animation.json'
+import skillAnimation from '@/assets/lottie/skills-animation.gif'
 import { skillsData } from './skills'
 import { useContext } from 'react'
 import { useState } from 'react'
@@ -19,7 +19,7 @@ export const Skills = () => {
   return (
     <section className="w-full lg:flex lg:items-start mt-20 mb-20 lg:justify-between">
       <div className="mr-[200px] flex justify-center mt-10 hidden lg:block">
-        <Lottie animationData={animation} loop={true} autoplay={true} style={{ width: 300 }} />
+        <Image src={skillAnimation} height={350} width={350} alt={`Intro animation`} unoptimized={true} />
       </div>
       <div className="">
         <h3 className="text-[44px] font-semibold mb-8">Skills</h3>
