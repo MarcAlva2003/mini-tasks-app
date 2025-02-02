@@ -1,6 +1,7 @@
 import { Button } from '@mui/material'
 import Image from 'next/image'
 import { IoIosArrowDown } from 'react-icons/io'
+import Link from 'next/link'
 import introAnimation from '@/assets/lottie/intro-animation.gif'
 
 export const Introduction = () => {
@@ -25,7 +26,9 @@ export const Introduction = () => {
               Download CV
             </Button>
           </div>
+          <Link href={'#about-me'} >
           <Button variant="contained">About Me</Button>
+          </Link>
         </div>
       </div>
       <div className="h-fit lg:h-full w-full max-w-[450px] md:m-[0_auto] lg:m-0">
