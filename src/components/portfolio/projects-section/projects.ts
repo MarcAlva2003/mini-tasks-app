@@ -1,5 +1,6 @@
 import { APP_ROUTES } from '@/constants/routes'
 import miniProjectsApp from '@/assets/project-covers/mini-tasks-app.png'
+import quizzGameApp from '@/assets/project-covers/quizz-game-cover.png'
 import tecsopelSAApp from '@/assets/project-covers/tecsopelsa-cover.png'
 
 export interface IProjectData {
@@ -29,7 +30,7 @@ export const projectsData: IProjectData[] = [
   },
   {
     title: 'Frontend Quiz React',
-    cover: miniProjectsApp.src,
+    cover: quizzGameApp.src,
     projectLink: 'https://quizz-app-react-three.vercel.app/',
     codeLink: 'https://github.com/MarcAlva2003/quizz-app-react',
     description: 'A basic quizz game about HTML, CSS, Javascript and Accessibility',
