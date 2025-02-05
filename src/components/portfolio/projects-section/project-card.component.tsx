@@ -42,7 +42,7 @@ export const ProjectCard = (props: IProjectCard) => {
           </div>
           <div className="">
             <h4 className="font-semibold mb-4">{title}</h4>
-            <div className="text-sm font-thin h-0 pb-[calc(56.25%_+_1.5px)]">
+            <div className="text-xs md:text-sm font-thin h-0 pb-[calc(56.25%_+_1.5px)]">
               <p>{description}</p>
             </div>
           </div>
