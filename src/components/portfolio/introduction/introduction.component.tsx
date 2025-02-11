@@ -24,10 +24,10 @@ export const Introduction = () => {
           <h1 className="font-semibold leading-[56px] text-[50px] md:text-[80px] lg:leading-[60px]">FRONTEND</h1>
           <h1 className="font-semibold text-[50px] md:text-[80px]">DEVELOPER</h1>
           <p className="mb-10 text-ms md:text-xl">
-            +2 years of experience creating <span className="text-[#90caf9]">clean</span> <br /> and{' '}
-            <span className="text-[#90caf9]">scalable</span> code for web applications,
+            <span className="text-[#90caf9]">+2 years</span> of experience creating clean <br /> and scalable code for
+            web applications,
             <br />
-            with React and Typescript
+            with <span className="text-[#90caf9]">Next.Js</span> and <span className="text-[#90caf9]">Typescript</span>
           </p>
         </div>
         <div className="flex justify-center lg:justify-start mt-8 lg:mt-0">
