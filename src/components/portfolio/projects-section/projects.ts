@@ -5,6 +5,7 @@ import miniProjectsApp from '@/assets/project-covers/mini-tasks-app.png'
 import peligrosaNetworkApp from '@/assets/project-covers/peligrosa-network-cover.png'
 import quizzGameApp from '@/assets/project-covers/quizz-game-cover.png'
 import rockEDMFestApp from '@/assets/project-covers/rock-edm-fest-cover.png'
+import tecsopelOldSAApp from '@/assets/project-covers/tecsopel-old-cover.png'
 import tecsopelSAApp from '@/assets/project-covers/tecsopelsa-cover.png'
 import whereIsMyCountryApp from '@/assets/project-covers/where-is-my-country-cover.png'
 
@@ -27,11 +28,18 @@ export const projectsData: IProjectData[] = [
     technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
   },
   {
-    title: 'Tecsopel SA',
+    title: 'Tecsopel SA (New)',
     cover: tecsopelSAApp.src,
     projectLink: '',
     description: '(In Progress) E-Commerce for TecsopelSA + an administration panel',
     technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
+  },
+  {
+    title: 'Tecsopel SA (Old)',
+    cover: tecsopelOldSAApp.src,
+    projectLink: 'https://tecsopel.netlify.app/',
+    description: 'App to show company products',
+    technologies: ['HTML', 'CSS', 'JavaScript']
   },
   {
     title: 'Frontend Quiz React',
