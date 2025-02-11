@@ -17,11 +17,11 @@ export const Skills = () => {
   }
 
   return (
-    <section className="w-full lg:flex lg:items-start pt-[180px] mb-20 lg:justify-between" id='skills'>
+    <section className="w-full lg:flex lg:items-start pt-[180px] lg:justify-between" id="skills">
       <div className="mr-[200px] flex justify-center mt-10 hidden lg:block">
         <Image src={skillAnimation} height={350} width={350} alt={`Intro animation`} unoptimized={true} />
       </div>
-      <div className="lg:w-[65%]"> 
+      <div className="lg:w-[65%]">
         <h3 className="text-[44px] font-semibold mb-8">Skills</h3>
         <div className="flex flex-wrap">
           {skillsData.map((section, index) => (
