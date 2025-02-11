@@ -47,7 +47,7 @@ export const SectionComponent = () => {
   const simpleTextPattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s0-9]+$/
 
   return (
-    <section className="mb-20">
+    <section className="mb-20 pt-20" id='contact'>
       <h3 className="text-[44px] font-semibold mb-8">Contact Me</h3>
       <div className="lg:flex lg:justify-between w-full">
         <div className='mb-8'>

@@ -20,11 +20,11 @@ export interface IProjectData {
 
 export const projectsData: IProjectData[] = [
   {
-    title: 'Mini Projects App',
+    title: 'Multi-Projects App',
     cover: miniProjectsApp.src,
     projectLink: APP_ROUTES.PROJECTS,
     codeLink: 'https://github.com/MarcAlva2003/mini-tasks-app',
-    description: 'An app with multiple mini projects, like an AIChat with OpenAI',
+    description: 'An app with multiple different projects, like an AIChat with OpenAI',
     technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
   },
   {
