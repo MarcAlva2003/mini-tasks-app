@@ -26,8 +26,8 @@ export const Introduction = () => {
               Download CV
             </Button>
           </div>
-          <Link href={'#about-me'} >
-          <Button variant="contained">About Me</Button>
+          <Link href={'#projects'}>
+            <Button variant="contained">Projects</Button>
           </Link>
         </div>
       </div>

@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <div className="md:px-10 lg:px-20">
       <Introduction />
-      <AboutMe />
       <ProjectsSection />
       <SkillsContextProvider>
         <Skills />
       </SkillsContextProvider>
+      <AboutMe />
       <SectionComponent />
     </div>
   )
