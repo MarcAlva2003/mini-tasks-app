@@ -31,14 +31,16 @@ export const projectsData: IProjectData[] = [
     title: 'Tecsopel SA (New)',
     cover: tecsopelSAApp.src,
     projectLink: '',
-    description: '(In Progress) E-Commerce for TecsopelSA + an administration panel',
+    description:
+      '(In Progress) E-Commerce for TecsopelSA with payment methods, product detail + an administration panel to manage products',
     technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
   },
   {
     title: 'Tecsopel SA (Old)',
     cover: tecsopelOldSAApp.src,
     projectLink: 'https://tecsopel.netlify.app/',
-    description: 'App to show company products',
+    description:
+      'Old Tecsopel SA website. Has product categories, product list and the option to contact and buy via WhatsApp',
     technologies: ['HTML', 'CSS', 'JavaScript']
   },
   {
@@ -54,7 +56,7 @@ export const projectsData: IProjectData[] = [
     cover: peligrosaNetworkApp.src,
     projectLink: 'https://peligrosanetwork.netlify.app/',
     codeLink: 'https://github.com/MarcAlva2003/peligrosa-network-website',
-    description: '',
+    description: 'Website for a Videogame Multiplayer Server promotion with gallery, blog, shop and more',
     technologies: ['VueJs', 'CSS', 'Javascript']
   },
   {
@@ -62,7 +64,7 @@ export const projectsData: IProjectData[] = [
     cover: blogDeCafeApp.src,
     projectLink: 'https://blog-del-cafe-dev.netlify.app/',
     codeLink: 'https://github.com/MarcAlva2003/cafe-blog',
-    description: '',
+    description: 'Practicing app with coffe blog, coffe courses, contact form and "about us" page',
     technologies: ['HTML', 'CSS', 'Javascript']
   },
   {
@@ -70,15 +72,15 @@ export const projectsData: IProjectData[] = [
     cover: whereIsMyCountryApp.src,
     projectLink: 'https://restcountries-api-project.netlify.app/',
     codeLink: 'https://github.com/MarcAlva2003/countries-api',
-    description: '',
-    technologies: ['VueJs', 'CSS', 'Javascript']
+    description: 'Practicing app using countries api with Axios',
+    technologies: ['VueJs', 'CSS', 'Javascript', 'Axios']
   },
   {
     title: 'Rock & EDM Festival',
     cover: rockEDMFestApp.src,
     projectLink: 'https://rock-edm-fest-dev.netlify.app/',
     codeLink: 'https://github.com/MarcAlva2003/festival-webpage',
-    description: '',
+    description: 'Practicing app promoting a concert',
     technologies: ['HTML', 'CSS', 'Javascript']
   },
   {
@@ -86,7 +88,7 @@ export const projectsData: IProjectData[] = [
     cover: frontendStoreApp.src,
     projectLink: 'https://frontend-store-develop.netlify.app/',
     codeLink: 'https://github.com/MarcAlva2003/front-end-store',
-    description: '',
+    description: 'Practicing app about tech t-shirts store with products scree, about us page and product detail',
     technologies: ['HTML', 'CSS', 'Javascript']
   }
 ]
