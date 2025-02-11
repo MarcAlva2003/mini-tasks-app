@@ -12,11 +12,32 @@ export const navItemsList: INavItem[] = [
   },
   {
     key: 'projects',
-    link: APP_ROUTES.PROJECTS,
-    name: 'Mini Projects',
+    link: `${APP_ROUTES.HOME}#projects`,
+    name: 'Projects',
     subitems: [],
     isUnfolded: false
-  }
+  },
+  {
+    key: 'skills',
+    link: `${APP_ROUTES.HOME}#skills`,
+    name: 'Skills',
+    subitems: [],
+    isUnfolded: false
+  },
+  {
+    key: 'about-me',
+    link: `${APP_ROUTES.HOME}#about-me`,
+    name: 'About Me',
+    subitems: [],
+    isUnfolded: false
+  },
+  {
+    key: 'contact',
+    link: `${APP_ROUTES.HOME}#contact`,
+    name: 'Contact',
+    subitems: [],
+    isUnfolded: false
+  },
 ]
 
 export const projectsNavItemsList: INavItem[] = [
