@@ -19,7 +19,7 @@ export const AboutMe = () => {
   ]
 
   return (
-    <section id={'about-me'} className="mb-20 pt-20">
+    <section id={'about-me'} className="pt-20">
       <h3 className="text-left lg:text-left text-[44px] font-semibold">About Me</h3>
       <div className="md:flex md:flex-row-reverse md:items-center">
         <div className="w-full md:w-[40%] md:ml-12">
