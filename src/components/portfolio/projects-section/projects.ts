@@ -1,7 +1,12 @@
 import { APP_ROUTES } from '@/constants/routes'
+import blogDeCafeApp from '@/assets/project-covers/blogdecafe-cover.png'
+import frontendStoreApp from '@/assets/project-covers/frontend-store-cover.png'
 import miniProjectsApp from '@/assets/project-covers/mini-tasks-app.png'
+import peligrosaNetworkApp from '@/assets/project-covers/peligrosa-network-cover.png'
 import quizzGameApp from '@/assets/project-covers/quizz-game-cover.png'
+import rockEDMFestApp from '@/assets/project-covers/rock-edm-fest-cover.png'
 import tecsopelSAApp from '@/assets/project-covers/tecsopelsa-cover.png'
+import whereIsMyCountryApp from '@/assets/project-covers/where-is-my-country-cover.png'
 
 export interface IProjectData {
   title: string
@@ -36,12 +41,44 @@ export const projectsData: IProjectData[] = [
     description: 'A basic quizz game about HTML, CSS, Javascript and Accessibility',
     technologies: ['ReactJs', 'Vite', 'Typescript', 'Tailwind', 'JSON', 'Vercel']
   },
-  // {
-  //   title: '',
-  //   cover: '',
-  //   projectLink: '',
-  //   codeLink: '',
-  //   description: '',
-  //   technologies: ['ReactJs', 'Vite', 'Typescript', 'Tailwind', 'Vercel']
-  // },
+  {
+    title: 'Peligrosa Network',
+    cover: peligrosaNetworkApp.src,
+    projectLink: 'https://peligrosanetwork.netlify.app/',
+    codeLink: 'https://github.com/MarcAlva2003/peligrosa-network-website',
+    description: '',
+    technologies: ['VueJs', 'CSS', 'Javascript']
+  },
+  {
+    title: 'Blog De Café',
+    cover: blogDeCafeApp.src,
+    projectLink: 'https://blog-del-cafe-dev.netlify.app/',
+    codeLink: 'https://github.com/MarcAlva2003/cafe-blog',
+    description: '',
+    technologies: ['HTML', 'CSS', 'Javascript']
+  },
+  {
+    title: 'Where is my country',
+    cover: whereIsMyCountryApp.src,
+    projectLink: 'https://restcountries-api-project.netlify.app/',
+    codeLink: 'https://github.com/MarcAlva2003/countries-api',
+    description: '',
+    technologies: ['VueJs', 'CSS', 'Javascript']
+  },
+  {
+    title: 'Rock & EDM Festival',
+    cover: rockEDMFestApp.src,
+    projectLink: 'https://rock-edm-fest-dev.netlify.app/',
+    codeLink: 'https://github.com/MarcAlva2003/festival-webpage',
+    description: '',
+    technologies: ['HTML', 'CSS', 'Javascript']
+  },
+  {
+    title: 'Frontend Store',
+    cover: frontendStoreApp.src,
+    projectLink: 'https://frontend-store-develop.netlify.app/',
+    codeLink: 'https://github.com/MarcAlva2003/front-end-store',
+    description: '',
+    technologies: ['HTML', 'CSS', 'Javascript']
+  }
 ]
