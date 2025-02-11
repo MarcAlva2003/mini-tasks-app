@@ -34,7 +34,7 @@ export const AboutMe = () => {
         </div>
         <div className="p-3 md:p-6 bg-[#90caf9] text-black rounded-[8px] h-fit md:w-[60%]">
           {aboutMeText.map((item, index) => (
-            <div key={`about-me-subitem-${index}`} className="mb-4 md:mb-8">
+            <div key={`about-me-subitem-${index}`} className="mb-4 md:mb-8 last:mb-0">
               <div>
                 <div className="flex items-center">
                   <h4 className="font-bold text-lg mr-2">{item.title}</h4>
