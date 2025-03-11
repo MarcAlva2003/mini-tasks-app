@@ -48,18 +48,18 @@ export const projectsNavItemsList: INavItem[] = [
     subitems: [],
     isUnfolded: false
   },
-  {
-    key: 'todo-list',
-    link: PROJECTS_ROUTES.TODO_LIST,
-    name: 'ToDo List',
-    subitems: [],
-    isUnfolded: false
-  },
-  {
-    key: 'quizz-game',
-    link: PROJECTS_ROUTES.QUIZZ_GAME,
-    name: 'Quizz Game',
-    subitems: [],
-    isUnfolded: false
-  }
+  // {
+  //   key: 'todo-list',
+  //   link: PROJECTS_ROUTES.TODO_LIST,
+  //   name: 'ToDo List',
+  //   subitems: [],
+  //   isUnfolded: false
+  // },
+  // {
+  //   key: 'quizz-game',
+  //   link: PROJECTS_ROUTES.QUIZZ_GAME,
+  //   name: 'Quizz Game',
+  //   subitems: [],
+  //   isUnfolded: false
+  // }
 ]
