@@ -1,0 +1,26 @@
+.chat-box {
+  scrollbar-color: oklch(0.282 0.091 267.935) #0f172a;
+}
+
+.chat-bot-message {
+  max-width: 90%;
+  p {
+    margin-bottom: 12px;
+  }
+  ul {
+    margin-bottom: 18px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  a {
+    @apply text-blue-500 underline
+  }
+  pre {
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    @apply bg-gray-800;
+  }
+}
+

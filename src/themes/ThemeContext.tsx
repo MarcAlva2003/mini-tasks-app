@@ -14,16 +14,10 @@ export const ThemeContextProvider = ({
   children: React.ReactNode
 }>) => {
   const [mode, setMode] = useState(() => {
-    // if (typeof window !== 'undefined') {
-    //   return localStorage.getItem('theme') || 'dark'
-    // }
     return 'dark'
   })
 
   useEffect(() => {
-    // if (typeof window !== 'undefined') {
-    //   localStorage.setItem('theme', mode)
-    // }
   }, [mode])
 
   const toggleMode = () => {

@@ -1,5 +1,3 @@
-// lib/gemini.ts
-
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export async function generateGeminiResponse(message: string): Promise<string> {
