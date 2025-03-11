@@ -4,23 +4,23 @@
 
 .chat-bot-message {
   max-width: 90%;
-  p {
-    margin-bottom: 12px;
-  }
-  ul {
-    margin-bottom: 18px;
-  }
-  li {
-    margin-bottom: 8px;
-  }
-  a {
-    @apply text-blue-500 underline
-  }
-  pre {
-    padding: 8px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    @apply bg-gray-800;
-  }
 }
 
+.chat-bot-message p {
+  margin-bottom: 12px;
+}
+.chat-bot-message ul {
+  margin-bottom: 18px;
+}
+.chat-bot-message li {
+  margin-bottom: 8px;
+}
+.chat-bot-message a {
+  @apply text-blue-500 underline;
+}
+.chat-bot-message pre {
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  @apply bg-gray-800;
+}
