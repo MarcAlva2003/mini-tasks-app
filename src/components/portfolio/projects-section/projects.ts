@@ -27,16 +27,16 @@ export const projectsData: IProjectData[] = [
     description: 'An app with multiple different projects, like an AIChat with OpenAI',
     technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
   },
+  // {
+  //   title: 'Tecsopel SA (New)',
+  //   cover: tecsopelSAApp.src,
+  //   projectLink: '',
+  //   description:
+  //     '(In Progress) E-Commerce for TecsopelSA with payment methods, product detail + an administration panel to manage products',
+  //   technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
+  // },
   {
-    title: 'Tecsopel SA (New)',
-    cover: tecsopelSAApp.src,
-    projectLink: '',
-    description:
-      '(In Progress) E-Commerce for TecsopelSA with payment methods, product detail + an administration panel to manage products',
-    technologies: ['NextJs 15', 'Typescript', 'Tailwind', 'Vercel']
-  },
-  {
-    title: 'Tecsopel SA (Old)',
+    title: 'Tecsopel SA',
     cover: tecsopelOldSAApp.src,
     projectLink: 'https://tecsopel.netlify.app/',
     description:
@@ -67,14 +67,14 @@ export const projectsData: IProjectData[] = [
     description: 'Practicing app with coffe blog, coffe courses, contact form and "about us" page',
     technologies: ['HTML', 'CSS', 'Javascript']
   },
-  {
-    title: 'Where is my country',
-    cover: whereIsMyCountryApp.src,
-    projectLink: 'https://restcountries-api-project.netlify.app/',
-    codeLink: 'https://github.com/MarcAlva2003/countries-api',
-    description: 'Practicing app using countries api with Axios',
-    technologies: ['VueJs', 'CSS', 'Javascript', 'Axios']
-  },
+  // {
+  //   title: 'Where is my country',
+  //   cover: whereIsMyCountryApp.src,
+  //   projectLink: 'https://restcountries-api-project.netlify.app/',
+  //   codeLink: 'https://github.com/MarcAlva2003/countries-api',
+  //   description: 'Practicing app using countries api with Axios',
+  //   technologies: ['VueJs', 'CSS', 'Javascript', 'Axios']
+  // },
   {
     title: 'Rock & EDM Festival',
     cover: rockEDMFestApp.src,
@@ -83,12 +83,12 @@ export const projectsData: IProjectData[] = [
     description: 'Practicing app promoting a concert',
     technologies: ['HTML', 'CSS', 'Javascript']
   },
-  {
-    title: 'Frontend Store',
-    cover: frontendStoreApp.src,
-    projectLink: 'https://frontend-store-develop.netlify.app/',
-    codeLink: 'https://github.com/MarcAlva2003/front-end-store',
-    description: 'Practicing app about tech t-shirts store with products scree, about us page and product detail',
-    technologies: ['HTML', 'CSS', 'Javascript']
-  }
+  // {
+  //   title: 'Frontend Store',
+  //   cover: frontendStoreApp.src,
+  //   projectLink: 'https://frontend-store-develop.netlify.app/',
+  //   codeLink: 'https://github.com/MarcAlva2003/front-end-store',
+  //   description: 'Practicing app about tech t-shirts store with products scree, about us page and product detail',
+  //   technologies: ['HTML', 'CSS', 'Javascript']
+  // }
 ]
