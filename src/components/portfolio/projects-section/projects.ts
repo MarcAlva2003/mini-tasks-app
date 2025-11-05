@@ -1,13 +1,13 @@
 import { APP_ROUTES } from '@/constants/routes'
 import blogDeCafeApp from '@/assets/project-covers/blogdecafe-cover.png'
-import frontendStoreApp from '@/assets/project-covers/frontend-store-cover.png'
+// import frontendStoreApp from '@/assets/project-covers/frontend-store-cover.png'
 import miniProjectsApp from '@/assets/project-covers/mini-tasks-app.png'
 import peligrosaNetworkApp from '@/assets/project-covers/peligrosa-network-cover.png'
 import quizzGameApp from '@/assets/project-covers/quizz-game-cover.png'
 import rockEDMFestApp from '@/assets/project-covers/rock-edm-fest-cover.png'
 import tecsopelOldSAApp from '@/assets/project-covers/tecsopel-old-cover.png'
-import tecsopelSAApp from '@/assets/project-covers/tecsopelsa-cover.png'
-import whereIsMyCountryApp from '@/assets/project-covers/where-is-my-country-cover.png'
+// import tecsopelSAApp from '@/assets/project-covers/tecsopelsa-cover.png'
+// import whereIsMyCountryApp from '@/assets/project-covers/where-is-my-country-cover.png'
 
 export interface IProjectData {
   title: string
