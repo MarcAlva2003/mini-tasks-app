@@ -24,8 +24,8 @@ export const Introduction = () => {
           <h1 className="font-semibold leading-[56px] text-[50px] md:text-[80px] lg:leading-[60px]">FRONTEND</h1>
           <h1 className="font-semibold text-[50px] md:text-[80px]">DEVELOPER</h1>
           <p className="mb-10 text-ms md:text-xl">
-            <span className="text-[#90caf9]">+2 years</span> of experience creating clean <br /> and scalable code for
-            web applications,
+            <span className="text-[#90caf9]">3 years</span> of experience creating clean <br /> and scalable code for
+            web and mobile applications,
             <br />
             with <span className="text-[#90caf9]">Next.Js</span> and <span className="text-[#90caf9]">Typescript</span>
           </p>
