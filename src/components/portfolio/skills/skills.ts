@@ -16,107 +16,114 @@ export interface ISkillSection {
 export const skillsData: ISkillSection[] = [
   {
     id: uuidv4(),
-    section: 'Languages',
+    section: 'Frontend',
     items: [
       {
-        name: 'TypeScript',
-        id: uuidv4(),
-        level: 85,
-        description:
-          'Experience in complex projects with TypeScript, including advanced typing, generics, and interface-oriented programming.'
-      },
-      {
-        name: 'JavaScript (ES6+)',
+        name: 'HTML & CSS',
         id: uuidv4(),
         level: 90,
-        description:
-          'Solid knowledge of modern JavaScript, including async, promises, object-oriented programming, and design patterns.'
-      },
-      {
-        name: 'HTML',
-        id: uuidv4(),
-        level: 95,
-        description: 'Mastery of HTML5 and semantics to create accessible and SEO-optimized web structures.'
-      },
-      {
-        name: 'CSS',
-        id: uuidv4(),
-        level: 90,
-        description:
-          'Knowledge of CSS3 and preprocessors like Sass or Less. Experience in responsive design and style frameworks like Tailwind CSS and Styled Components.'
-      }
-    ]
-  },
-  {
-    id: uuidv4(),
-    section: 'Frontend Frameworks/Libraries',
-    items: [
-      {
-        name: 'Next.js',
-        id: uuidv4(),
-        level: 80,
-        description:
-          'Experience in Next.js 13, 14, and 15, including Server-Side Rendering (SSR), Static Site Generation (SSG), API Routes, performance optimization, and deployment strategies.'
+        description: 'Strong foundation in modern semantic HTML and responsive CSS. Experience building scalable UI layouts and component-based interfaces for production environments.'
       },
       {
         name: 'React',
         id: uuidv4(),
         level: 85,
         description:
-          'Extensive experience in developing reusable components, state management with React Hooks and Context API, and optimizing React application performance.'
+          'Primary framework used across professional projects. Built complex, scalable web apps with reusable components, hooks, context, performance optimization, and clean architecture principles.'
       },
+      {
+        name: 'Next.js',
+        id: uuidv4(),
+        level: 80,
+        description:
+          'Developed multiple production apps with server-side rendering, API routes, authentication, and optimized deployments. Experience with both Next 13+ App Router and legacy Pages Router.'
+      },
+      {
+        name: 'React Native',
+        id: uuidv4(),
+        level: 60,
+        description:
+          'Built cross-platform mobile applications for iOS and Android, integrating native modules, secure auth flows, biometrics, and real-time features.'
+      },
+      {
+        name: 'JavaScript (ES6+)',
+        id: uuidv4(),
+        level: 90,
+        description:
+          'Deep understanding of modern JavaScript features, async programming, and DOM manipulation in real-world production environments.'
+      },
+      {
+        name: 'TypeScript',
+        id: uuidv4(),
+        level: 80,
+        description:
+          'Daily use of strongly typed components, custom types, generics, and improved DX practices to ensure scalability and maintainability.'
+      },
+    ]
+  },
+  {
+    id: uuidv4(),
+    section: 'Frameworks/Libraries',
+    items: [
       {
         name: 'Material UI (MUI)',
         id: uuidv4(),
-        level: 85,
+        level: 80,
         description:
-          'Efficient use of Material UI components to create attractive and accessible user interfaces. Customization of themes and components.'
+          'Used MUI to build a production-ready UI experience, leveraging pre-built components, theme customization, responsive layouts, and accessibility-friendly design patterns. Integrated design tokens and component overrides to maintain a consistent visual identity while accelerating development.'
       },
       {
         name: 'Tailwind CSS',
         id: uuidv4(),
         level: 80,
-        description: 'Experience using Tailwind CSS to quickly style web applications with a utility-first approach.'
+        description: 'Used for rapid styling and consistent UI across web projects. Experience building component libraries and responsive UI systems.'
       },
       {
         name: 'Styled Components',
         id: uuidv4(),
         level: 80,
-        description: 'Knowledge of Styled Components to create styled and reusable components in React.'
+        description: 'Used for dynamic styles, theme-based UI systems, and creating scalable design structures in production apps.'
       },
       {
         name: 'Storybook',
         id: uuidv4(),
-        level: 70,
+        level: 50,
         description:
-          'Using Storybook to create and maintain reusable component libraries, facilitating development and documentation.'
+          'Built reusable UI libraries and documented component behavior, improving design consistency and team collaboration.'
       }
     ]
   },
   {
     id: uuidv4(),
-    section: 'State Management',
+    section: 'Architecture & Principles',
     items: [
       {
-        name: 'React Context',
-        id: uuidv4(),
-        level: 80,
-        description:
-          'Experience in managing state in React applications using the Context API for shared data across the application.'
-      },
-      {
-        name: 'Redux',
-        id: uuidv4(),
-        level: 60,
-        description:
-          'Knowledge of Redux for global state management in complex React applications, including the use of actions, reducers, and selectors.'
-      },
-      {
-        name: 'React Query',
+        name: 'SOLID & Clean Code',
         id: uuidv4(),
         level: 70,
         description:
-          'Experience using React Query to manage and cache asynchronous data in React applications, optimizing performance and user experience.'
+          'Applied SOLID, Clean Code, and modular design patterns across professional projects for reliability, testability, and long-term maintainability.'
+      },
+      {
+        name: 'KISS & DRY',
+        id: uuidv4(),
+        level: 85,
+        description:
+          'Consistently apply simplicity and reusability principles to avoid complexity and improve code quality.'
+      },
+      {
+        name: 'Component Reusability',
+        id: uuidv4(),
+        level: 90,
+        description:
+          'Created scalable UI systems and reusable components across web and mobile applications.'
+      },
+      {
+        name: 'React Context',
+        id: uuidv4(),
+        level: 90,
+        description:
+          'Extensive use for global state, authentication flows, and shared business logic across React and Next.js apps.'
       }
     ]
   },
@@ -127,147 +134,69 @@ export const skillsData: ISkillSection[] = [
       {
         name: 'REST APIs',
         id: uuidv4(),
-        level: 80,
+        level: 90,
         description:
-          'Understanding of REST API principles and their implementation. Experience in consuming RESTful APIs from the frontend.'
+          'Built and consumed REST APIs with secure data flows, error handling, and token-based authentication.'
       },
       {
         name: 'HTTP Requests',
         id: uuidv4(),
         level: 90,
-        description: 'Mastery of HTTP requests and methods (GET, POST, PUT, DELETE). Handling responses and errors.'
+        description: 'Deep experience managing async requests, retries, caching, and optimizing API communication in real projects.'
+      },
+      {
+        name: 'React Query',
+        id: uuidv4(),
+        level: 80,
+        description:
+          'Used for real-time data fetching, caching, and optimistic updates in production environments.'
       },
       {
         name: 'Axios',
         id: uuidv4(),
-        level: 75,
-        description: 'Using the Axios library to make HTTP requests from the frontend easily and efficiently.'
+        level: 80,
+        description: 'Daily use to integrate and abstract API logic, handle interceptors, and manage secure API calls.'
       },
       {
-        name: 'Node.js',
+        name: 'Node.js & NestJS',
         id: uuidv4(),
         level: 30,
         description:
-          'Basic knowledge of Node.js and its use for backend development. (Mention that you are in the process of learning and expanding your skills in this field).'
+          'Currently building foundations toward full-stack development. Hands-on experience with Node.js and actively learning NestJS.'
       },
-      {
-        name: 'Express',
-        id: uuidv4(),
-        level: 20,
-        description:
-          'Basic knowledge of Express.js and its use for creating APIs and web servers. (Mention that you are in the process of learning and expanding your skills in this field).'
-      }
     ]
   },
   {
     id: uuidv4(),
-    section: 'Authentication',
-    items: [
-      {
-        name: 'Auth0',
-        id: uuidv4(),
-        level: 60,
-        description: 'Experience integrating Auth0 for user authentication and authorization in web applications.'
-      },
-      {
-        name: 'JWT (JSON Web Tokens)',
-        id: uuidv4(),
-        level: 70,
-        description:
-          'Understanding how JWTs work and their use for authentication and authorization in web applications.'
-      },
-      {
-        name: 'React Cookies',
-        id: uuidv4(),
-        level: 80,
-        description: 'Using React Cookies to manage cookies in React applications.'
-      }
-    ]
-  },
-  {
-    id: uuidv4(),
-    section: 'Tools',
+    section: 'Tooling',
     items: [
       {
         name: 'Git',
         id: uuidv4(),
-        level: 80,
-        description: 'Mastery of Git for version control and collaboration on projects.'
+        level: 75,
+        description: 'Comfortable with branching strategies, code reviews, and collaborative workflows.'
       },
       {
-        name: 'GitHub',
+        name: 'Github & Gitlab',
         id: uuidv4(),
         level: 80,
-        description: 'Using GitHub for repository management, pull requests, issues, and other collaboration features.'
+        description:
+          'Experience in CI/CD workflows, version control, code reviews, and project collaboration.'
       },
       {
         name: 'Vercel',
         id: uuidv4(),
-        level: 70,
+        level: 65,
         description:
-          'Experience deploying web applications on Vercel, including domain configuration and environment management.'
+          'Frequent deployments of production projects using Vercel’s build pipelines and serverless functions.'
       },
       {
-        name: 'Trello',
-        id: uuidv4(),
-        level: 75,
-        description: 'Using Trello for project and task management, following the SCRUM methodology.'
-      }
-    ]
-  },
-  {
-    id: uuidv4(),
-    section: 'Others',
-    items: [
-      {
-        name: 'Day.js',
+        name: 'Agile/Scrum',
         id: uuidv4(),
         level: 85,
-        description: 'Using Day.js for date and time manipulation and formatting in web applications.'
-      },
-      {
-        name: 'SwiperJS',
-        id: uuidv4(),
-        level: 80,
-        description: 'Experience using SwiperJS to create sliders and carousels in web applications.'
-      },
-      {
-        name: 'React Hook Form',
-        id: uuidv4(),
-        level: 90,
         description:
-          'Using React Hook Form to create forms in React easily and efficiently, including validation and error handling.'
+          'Experience working in iterative development cycles, sprint planning, daily stand-ups, and cross-team collaboration.'
       },
-      {
-        name: 'React Icons',
-        id: uuidv4(),
-        level: 90,
-        description: 'Using React Icons to integrate icons into React applications.'
-      },
-      {
-        name: 'GSAP (GreenSock Animation Platform)',
-        id: uuidv4(),
-        level: 70,
-        description: 'Basic knowledge of GSAP for creating animations in web applications.'
-      },
-      {
-        name: 'React Charts',
-        id: uuidv4(),
-        level: 70,
-        description: 'Using React Charts to create interactive charts and dashboards in web applications.'
-      }
-    ]
-  },
-  {
-    id: uuidv4(),
-    section: 'Methodologies',
-    items: [
-      {
-        name: 'SCRUM',
-        id: uuidv4(),
-        level: 90,
-        description: 'Experience working with the SCRUM methodology for project management and team collaboration.'
-      }
     ]
   },
   {
@@ -277,73 +206,45 @@ export const skillsData: ISkillSection[] = [
       {
         name: 'Problem-solving',
         id: uuidv4(),
-        level: 90,
+        level: 95,
         description:
-          'Ability to analyze complex problems, identify root causes, and find effective and scalable solutions. Experience using problem-solving methodologies and debugging tools.'
+          'Strong debugging mindset, proactive issue resolution, and ability to navigate unclear requirements.'
       },
       {
         name: 'Teamwork',
         id: uuidv4(),
-        level: 80,
+        level: 90,
         description:
-          'Ability to collaborate in multidisciplinary teams, communicating ideas clearly and constructively. Experience using collaboration tools and agile methodologies.'
+          'Collaborative approach, active communication, and willingness to support teammates.'
       },
       {
         name: 'Adaptability',
         id: uuidv4(),
         level: 90,
         description:
-          'Ability to adapt to different work environments, technologies, and projects. Flexibility to learn new skills and tools as needed.'
+          'Ability to learn quickly, embrace new technologies, and adjust to evolving requirements.'
       },
       {
-        name: 'Fast Learning',
+        name: 'Analytical Thinking',
         id: uuidv4(),
-        level: 85,
+        level: 90,
         description:
-          'Ease of acquiring new skills and technical knowledge autonomously and efficiently. Motivation for continuous learning and knowledge updating.'
+          'Structured thinking for breaking down complex problems, optimizing workflows, and improving system architecture.'
       },
       {
         name: 'Communication',
         id: uuidv4(),
-        level: 80,
-        description:
-          'Ability to communicate clearly and effectively, both orally and in writing. Ability to explain technical concepts to non-technical audiences.'
-      },
-      {
-        name: 'Organization',
-        id: uuidv4(),
-        level: 80,
-        description:
-          'Ability to organize tasks and projects efficiently, prioritizing activities and meeting deadlines. Use of project management tools and agile methodologies.'
-      },
-      {
-        name: 'Creativity',
-        id: uuidv4(),
         level: 85,
         description:
-          'Ability to generate original ideas and innovative solutions. Focus on continuous improvement and finding new ways to solve problems.'
+          'Clear communicator able to explain technical concepts to both technical and non-technical audiences.'
       },
       {
-        name: 'Leadership',
+        name: 'Continuous Learning',
         id: uuidv4(),
-        level: 70,
+        level: 100,
         description:
-          'Ability to lead teams and projects, motivating members and guiding them towards achieving common goals. Experience in decision-making and conflict management.'
+          'Actively learning advanced backend, architecture patterns, and full-stack fundamentals to evolve tech capabilities.'
       },
-      {
-        name: 'Critical Thinking',
-        id: uuidv4(),
-        level: 75,
-        description:
-          'Ability to analyze information objectively and evaluate different perspectives. Ability to identify biases and make informed decisions.'
-      },
-      {
-        name: 'Time Management',
-        id: uuidv4(),
-        level: 70,
-        description:
-          'Ability to manage time effectively, prioritizing tasks and meeting deadlines. Use of time management techniques and productivity tools.'
-      }
     ]
-  }
+  },
 ]
