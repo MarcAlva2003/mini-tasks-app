@@ -31,13 +31,6 @@ export const navItemsList: INavItem[] = [
     subitems: [],
     isUnfolded: false
   },
-  {
-    key: 'contact',
-    link: `${APP_ROUTES.HOME}#contact`,
-    name: 'Contact',
-    subitems: [],
-    isUnfolded: false
-  },
 ]
 
 export const projectsNavItemsList: INavItem[] = [
@@ -48,18 +41,4 @@ export const projectsNavItemsList: INavItem[] = [
     subitems: [],
     isUnfolded: false
   },
-  // {
-  //   key: 'todo-list',
-  //   link: PROJECTS_ROUTES.TODO_LIST,
-  //   name: 'ToDo List',
-  //   subitems: [],
-  //   isUnfolded: false
-  // },
-  // {
-  //   key: 'quizz-game',
-  //   link: PROJECTS_ROUTES.QUIZZ_GAME,
-  //   name: 'Quizz Game',
-  //   subitems: [],
-  //   isUnfolded: false
-  // }
 ]

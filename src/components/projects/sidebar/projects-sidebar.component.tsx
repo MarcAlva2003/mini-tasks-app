@@ -1,8 +1,9 @@
+'use client'
+
 import { useMemo, useState } from 'react'
 
 import { INavItem } from '@/interfaces/nav-items.interface'
 import Link from 'next/link'
-import { TextField } from '@mui/material'
 import { projectsNavItemsList } from '@/constants/nav-items'
 import { usePathname } from 'next/navigation'
 
@@ -46,28 +47,29 @@ export const ProjectsSidebar = () => {
   }, [search])
 
   return (
-    <div className="h-[calc(100vh-64px)] w-[240px] max-w-[240px] min-w-[240px] border-r border-slate-800 text-slate-100 pr-4 hidden md:block">
-      <h2 className="text pt-10 pb-4">PROJECTS</h2>
-      <div className="w-full mb-2">
-        <TextField
-          className="w-full"
-          variant="filled"
-          label="Search project"
-          size="small"
+    <div className="h-[calc(100vh-64px)] w-[240px] max-w-[240px] min-w-[240px] border-r border-border text-foreground pr-4 hidden md:block">
+      <h2 className="font-heading pt-10 pb-4 text-sm tracking-widest uppercase text-muted-foreground">Projects</h2>
+      <div className="w-full mb-3">
+        <input
+          type="text"
+          placeholder="Search project..."
+          className="w-full rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 outline-none transition-all duration-200 focus:border-primary/50 focus:ring-1 focus:ring-primary/20"
           value={search}
           onChange={handleSearchChange}
         />
       </div>
-      <div className="">
+      <div>
         {!filteredItems.length ? (
-          <p className="text-slate-500 text-base ">No projects found</p>
+          <p className="text-muted-foreground text-sm">No projects found</p>
         ) : (
           filteredItems.map((item: INavItem) => {
             return (
               <Link href={item.link} key={`${item.key}-project-link`}>
                 <div
-                  className={`px-3 py-2 rounded-[4px] mb-1 ${
-                    item.link === pathname ? 'bg-slate-700 bg-opacity-30 text-blue-300' : 'text-slate-300'
+                  className={`px-3 py-2 rounded-md mb-1 text-sm transition-colors ${
+                    item.link === pathname
+                      ? 'bg-primary/10 text-primary'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-white/5'
                   }`}
                 >
                   {item.name}

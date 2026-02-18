@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx next lint)",
+      "Bash(npx next build:*)",
+      "Bash(yarn install:*)",
+      "Bash(where:*)",
+      "Bash(cmd.exe /c \"yarn --version\")",
+      "Bash(yarn build)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(node -e:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)"
+    ]
+  }
+}
