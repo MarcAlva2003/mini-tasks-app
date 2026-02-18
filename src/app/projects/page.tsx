@@ -9,7 +9,7 @@ export default function ProjectsPage() {
 
   useEffect(() => {
     router.push(PROJECTS_ROUTES.AI_CHATBOX)
-  }, [])
+  }, [router])
 
   return <div/>
 }

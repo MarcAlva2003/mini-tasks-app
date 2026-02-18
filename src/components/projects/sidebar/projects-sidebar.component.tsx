@@ -1,3 +1,5 @@
+'use client'
+
 import { useMemo, useState } from 'react'
 
 import { INavItem } from '@/interfaces/nav-items.interface'
