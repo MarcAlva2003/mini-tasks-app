@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import { BotMessageComponent } from './bot-message.component'
 import { IoSend } from 'react-icons/io5'
-import { TextField } from '@mui/material'
 import { UserMessageComponent } from './user-message.component'
 import { generateGeminiResponse } from '@/services/gemini.services'
 import styles from './chat-box.module.css'
@@ -63,26 +62,25 @@ export const AIChatbox = () => {
         )}
         {isLoading && <BotMessageComponent loading message={''} />}
       </div>
-      <div style={{ padding: '10px', display: 'flex' }}>
-        <TextField
-          size="small"
-          fullWidth
+      <div className="p-2.5 flex">
+        <input
           type="text"
           value={input}
           onChange={handleInputChange}
-          className="grow mr-2"
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !isLoading) {
               sendMessage()
             }
           }}
+          className="flex-1 mr-2 rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/50 outline-none transition-all duration-200 focus:border-primary/50 focus:ring-1 focus:ring-primary/20"
+          placeholder="Type a message..."
         />
         <button
           onClick={sendMessage}
           disabled={isLoading}
-          className="h-10 w-10 flex justify-center items-center disabled:text-gray-700"
+          className="h-10 w-10 flex justify-center items-center text-muted-foreground hover:text-primary transition-colors disabled:text-muted-foreground/30"
         >
-          <IoSend size={22} />
+          <IoSend size={20} />
         </button>
       </div>
     </div>
